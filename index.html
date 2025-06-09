@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Noite Estrelada</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      color: white;
+      font-family: 'Helvetica Neue', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .fade {
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .fade.show {
+      opacity: 1;
+    }
+
+    .polaroid {
+      background: white;
+      padding: 10px;
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+      color: black;
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen px-4 text-center relative">
+
+  <!-- Música Spotify -->
+  <div class="absolute top-4 right-4">
+    <iframe style="border-radius:12px" 
+      src="
